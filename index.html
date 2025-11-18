@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWT Quiz - Software Testing</title>
+    <link rel="stylesheet" href="quiz-style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎓 SWT Quiz - Software Testing</h1>
+            <p>Bài kiểm tra kiến thức Software Testing</p>
+            <div class="progress-info">
+                <span id="progressText">Đã trả lời: <strong>0/219</strong></span>
+                <div class="progress-bar">
+                    <div id="progressFill" class="progress-fill"></div>
+                </div>
+            </div>
+        </header>
+
+        <form id="quizForm">
+            <div class="questions-container" id="questionsContainer">
+                <!-- Questions will be loaded by JavaScript -->
+            </div>
+
+            <div class="action-buttons">
+                <button type="button" class="btn-secondary" onclick="resetQuiz()">Làm lại</button>
+                <button type="submit" class="submit-btn">Nộp bài</button>
+            </div>
+        </form>
+
+        <div id="result" class="result"></div>
+    </div>
+    <button>
+        <a href="quiz2.html" class="btn-link">Làm bài Quiz 2 (Câu 61-120)</a>
+    </button>
+    <script src="quiz-data.js"></script>
+    <script src="quiz-script.js"></script>
+</body>
+</html>

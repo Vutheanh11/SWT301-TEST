@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWT Quiz 1 - Software Testing (Câu 1-60)</title>
+    <link rel="stylesheet" href="quiz-style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📝 SWT Quiz 1</h1>
+            <p>Bài kiểm tra kiến thức Software Testing (Câu 1-60)</p>
+            <div class="quiz-navigation">
+                <a href="quiz.html" class="quiz-nav-btn active">Quiz 1</a>
+                <a href="quiz2.html" class="quiz-nav-btn">Quiz 2</a>
+                <a href="quiz3.html" class="quiz-nav-btn">Quiz 3</a>
+            </div>
+            <div class="progress-info">
+                <span id="progressText">Đã trả lời: <strong>0/60</strong></span>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+            </div>
+        </header>
+
+        <form id="quizForm">
+            <div class="questions-container" id="questionsContainer">
+                <!-- Questions will be loaded here by JavaScript -->
+            </div>
+
+            <div class="action-buttons">
+                <button type="submit" class="submit-btn">Nộp bài</button>
+                <button type="button" class="btn-secondary" onclick="resetQuiz()">Làm lại</button>
+            </div>
+        </form>
+
+        <div id="result" class="result">
+            <!-- Result will be displayed here -->
+        </div>
+    </div>
+
+    <script src="quiz-data.js"></script>
+    <script src="quiz-script.js"></script>
+</body>
+</html>
